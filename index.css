@@ -1,0 +1,37 @@
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 5vh;
+}
+
+body {
+    font-size: large;
+    background-color: #EEEEEE;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 5%;
+}
+
+.vh40 {
+    height: 40vh;
+}
+
+.vh15 {
+    height: 15vh;
+}
+
+.btn {
+    font-size: 3rem;
+}
+
+.nextColor {
+    font-size: 7rem;
+}
+
+[v-cloak]{
+    display: none;
+}

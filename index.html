@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>失去夢想的 - 黑色沙漠副本小幫手</title>
+    <link rel="stylesheet" href="./lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css?v=20221119" />
+</head>
+<body>
+    <div class="container-fluid">
+        <main role="main" id="app" v-cloak>
+            <div class="row vh40">
+                <div class="col-6 btn btn-warning d-flex align-items-center justify-content-center" id="yellow" :class="isYellowMax?'nextColor':''" v-on:click="counts.yellow++">{{counts.yellow}}</div>
+                <div class="col-6 btn btn-light d-flex align-items-center justify-content-center" id="white" :class="isWhiteMax?'nextColor':''" v-on:click="counts.white++">{{counts.white}}</div>
+            </div>
+            <div class="row vh40">
+                <div class="col-6 btn btn-danger d-flex align-items-center justify-content-center" id="red" :class="isRedMax?'nextColor':''" v-on:click="counts.red++">{{counts.red}}</div>
+                <div class="col-6 btn btn-info d-flex align-items-center justify-content-center" id="blue" :class="isBlueMax?'nextColor':''" v-on:click="counts.blue++">{{counts.blue}}</div>
+            </div>
+            <div class="row vh15">
+                <div class="col-12 btn btn-secondary d-flex align-items-center justify-content-center" id="reset" v-on:click="reset">歸零</div>
+            </div>
+        </main>
+    </div>
+    <footer class="text-muted list-group-item-dark">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">&copy;失去夢想的 - 黑色沙漠副本小幫手</div>
+        </div>
+    </footer>
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.js?v=20221119"></script>
+</body>
+</html>
